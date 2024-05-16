@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sugar Slice |Login</title>
+</head>
+<body>
+    <div class="login1">
+        <form action="index.html" method="post" onsubmit="return login()">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="Username" id="username">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="password"  id="password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="showpass">
+                <label ><input type="checkbox" onclick="showPass()">show password</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link"><p>Don't have an account ?<a href="register.html">Register</a></p></div>
+        </form>
+    </div>
+    <script>
+        var users = [{
+        fullName: 'Soukaina Chennani',
+        username: 'soukaina',
+        email: 'soukaina@gmail.com',
+        phone: '0770123208',
+        password: '12345678'},
+       { fullName: 'Ines el',
+        username: 'ines',
+        email: 'ines@gmail.com',
+        phone: '12345',
+        password: '123456789'}
+    ];
+
+        function login(){
+            usernameValue=document.getElementById("username").value;
+            passwordValue=document.getElementById("password").value;
+            if(usernameValue==''){
+                alert("username must be filled out");
+                return false;
+            }else if(passwordValue==''){
+                alert("password must be filled out");
+                return false;
+            }
+            for(var i=0;i<users.length;i++){
+                if(users[i].username===usernameValue && users[i].password===passwordValue ){
+                    alert("Welcome back!");
+                    return true;
+                }
+                
+            }
+            alert("Incorrect username or password. Please try again.");
+            return false;  
+        }
+        function showPass(){
+            var passInput=document.getElementById('password');
+            if(passInput.type=='password'){
+                passInput.type='text';
+            }else if(passInput.type='text'){
+                passInput.type='password';
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
