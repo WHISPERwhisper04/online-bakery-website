@@ -1,0 +1,175 @@
+header {
+    background-color: #97d3e7; 
+    padding: 20px 1px;
+    width: 100%;    
+    position: fixed;
+    top: 0;
+}
+.logo  {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+.main-slide img{
+  border-radius: 20px;
+  display: block; 
+  margin: auto;
+  width: 80%; 
+  max-width: 600px; 
+  height: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff69b4; 
+}
+
+nav ul li a:hover {
+    color: white;
+}
+.title{
+    margin-top: 100px;
+    text-align: center;
+    color: #ff69b4;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.main-slide h3 {
+    text-align: center;
+}
+.About-us {
+    border-radius: 10px;
+}
+
+.aboutUs,
+.whoAreWeTitle,
+.ourMissionTitle,
+.whyAreWeUniqueTitle {
+    color: #ff69b4;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;  
+}
+.aboutUs{
+  padding-top: 40px;
+}
+.whoAreWe,
+.OurMission,
+.whyAreWeUnique {
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px;
+}
+.whoAreWe p,
+.OurMission p,
+.whyAreWeUnique p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.t1{
+    text-align: center;
+    color: #666;
+}
+#contact h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: #ff69b4;
+    padding-top: 30px;
+}
+#contact .c1 {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+  #contact .contact-info {
+    width: 50%;
+    padding-left: 200px;
+    margin: 30px;
+  }
+  #contact .contact-info h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+  }
+  #contact .contact-info p {
+    color: #9a9a9a;
+  }
+  
+  #contact .contact-info p i {
+    color: #ff69b4;
+    margin-right: 5px;
+  }
+  #contact .contact-info a i {
+    color: #fff;
+    background: #383848;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  #contact .contact-info a i:hover {
+    background-color: #ff69b4;
+    color: #383848;
+  }
+  form {
+    width: 50%;
+  }
+  form input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px ;
+    border: none;
+    background-color: #e3e2dd;
+    border-radius: 4px;
+  }
+  #contact .btn{
+    background: #ff69b4;
+    color: #fff;  
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #contact .btn:hover{
+    background-color: #383848;
+  }
+footer {
+    background-color: #97d3e7; 
+    padding: 20px;
+    text-align: center; 
+    color: white; 
+}
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
