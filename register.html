@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="register.css">
+    <title>Sugar Slice |Register</title>
+</head>
+<body>
+    <div class="register">
+        <form id="registeration-form" action="index.html" method="post" onsubmit="return validateForm() && addUser() ">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Fullname"  id="fullName">
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-field"><input type="text" placeholder="Username"  id="username">
+                    <i class='bx bxs-user'></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field"><input type="email" placeholder="Email" id="email">
+                    <i class='bx bxs-envelope'></i></div>
+                <div class="input-field"><input type="number" placeholder="Phone number" id="phone">
+                    <i class='bx bxs-phone'></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field"><input id="password" type="password" placeholder="password" >
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-field"><input id="confirm_password" type="password" placeholder="Confirm password" >
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-link"><p>You already have an account ?<a href="login.html">Sign in</a></p></div>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var passwordValue = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+            var fullNameValue = document.getElementById('fullName').value;
+            var usernameValue = document.getElementById('username').value;
+            var emailValue = document.getElementById('email').value;
+            var phoneValue = document.getElementById('phone').value;
+             if (fullNameValue == '') {
+                alert("Fullname must be filled out");
+                return false;
+             } 
+             if (usernameValue == '') {
+                alert("Username must be filled out");
+                return false;
+             } 
+             if (emailValue == '') {
+                alert("Email must be filled out");
+                return false;
+             } 
+             if (phoneValue == '') {
+                alert("Phone number must be filled out");
+                return false;
+             }
+             if (passwordValue == '') {
+                alert("Password must be filled out");
+                return false;
+             }
+             if (passwordValue.length < 8) {
+                alert('Password must contain at least 8 characters');
+                return false; 
+            }
+             if (confirm_password == '') {
+                alert("Please confirm your password");
+                return false;
+             }
+           
+            if (passwordValue !== confirm_password) {
+                alert('Password does not match');
+                return false; 
+             }
+              return true;
+            }
+        var users = [{
+        fullName: 'Soukaina Chennani',
+        username: 'soukaina',
+        email: 'soukaina@gmail.com',
+        phone: '0770123208',
+        password: '12345678'}];
+        console.log(users);
+        function addUser(){
+            var fullNameValue=document.getElementById('fullName').value;
+            var usernameValue=document.getElementById('username').value;
+            var emailValue=document.getElementById('email').value;
+            var phoneValue=document.getElementById('phone').value;
+            var passwordValue=document.getElementById('password').value;
+           var user={};
+           user.fullName=fullNameValue;
+           user.username=usernameValue;
+           user.email=emailValue;
+           user.phone=phoneValue;
+           user.password=passwordValue;
+           users.push(user);
+           console.log(users);
+        }
+    </script>
+</body>
+</html>
