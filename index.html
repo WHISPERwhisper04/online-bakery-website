@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>SugarSlice</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+             <h1 class="logo">SugarSlice</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#About-us">About Us</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="title" id="homeT">Sugar Slice</h1>
+    <section class="main-slide">
+        <h3>Indulge in Sweet Bliss at Sugar Slice - Where Every Bite is a Delight!</h3>
+        <img src="images/image1.jpg" >
+    </section>
+    <section id="About-us">
+        <h1 class="aboutUs" id="AboutUs">
+            About Us
+        </h1>
+         <section class="whoAreWe">
+                <h1 class="whoAreWeTitle" >
+                  WHO ARE WE
+                </h1>
+                <p>
+                    At SugarSlice, we are passionate about crafting delectable desserts that delight the senses. 
+                    Located in the vibrant city of Marrakech, our bakery specializes in a wide array of mouthwatering treats,
+                     from decadent cakes to delicate pastries. With a dedication to quality and flavor, 
+                     we strive to create sweet moments for every occasion. Whether you're celebrating a special milestone or simply satisfying a craving, 
+                     SugarSlice is here to indulge your taste buds in Marrakech's dessert scene.
+        </section>
+        <section class="OurMission">
+            <h1 class="ourMissionTitle" >
+              OUR MISSION
+            </h1>
+            <p>
+                Our mission is to make people happy. 
+                Making delicious cakes, having relaxing chairs in a smoking free environment and keeping our
+                 prices reasonable are all different ways to achieve this goal.
+    </section>
+    <section class="whyAreWeUnique">
+        <h1 class="whyAreWeUniqueTitle">
+            Why are we unique
+        </h1>
+        <h3 class="t1">Integrity and honesty</h3>
+        <p>We strive to embrace transparency and to manage expectation and fulfill our commitments. We believe that this shall make a better world (people, environment, and creatures) living in peace, happiness, and prosperity.
+        </p>
+        <h3 class="t1">Excellence</h3>
+        <p> A team of trustworthy humans; disciplined, happy, engaged, and self-managed. A core of a team of passionate professionals: we love what we do, we feel good doing it better and better, excellently, and addicted to live it happily together.
+        </p>
+        <h3 class="t1">Service Oriented</h3>
+        <p>We are dedicated to provide a superior hospitality and care of our customers, to delight them.
+        </p>
+        <h3 class="t1">Quality</h3>
+        <p>Quality is everything we think about. We are dedicated to provide the highest level of food and service quality to our customers</p>
+    </section>
+    <section>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217361.82148365138!2d-8.28510761260988!3d31.653600586533315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef9ce2003acb%3A0xbf12ed0e32f9fa0c!2sSchool%20Moroccan%20Science%20De%20L&#39;ing%C3%A9nieur!5e0!3m2!1sen!2sma!4v1715420121123!5m2!1sen!2sma" width="1263" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        </div>
+    </section>
+    <section id="contact">
+        <h1 id="contactUs">Contact us</h1>
+        <div class="c1">
+                <div class="contact-info">
+                    <div>
+                        <h3>ADDRESS</h3>
+                        <p><i class='bx bxs-location-plus'></i> Marrakech, Morocco</p>
+                        <p><i class='bx bxs-phone'></i> Phone: 123456789</p>
+                        <p><i class='bx bxs-envelope'></i> sugarSliceBakery@example.com</p>
+                    </div>
+                    <div>
+                        <h3>WORKING HOURS</h3>
+                        <p>9:00 am to 11:00 pm on Weekdays</p>
+                        <p>11:00 am to 12:00 Am on Weekends</p>
+                    </div>
+                    <div>
+                        <h3>FOLLOW US</h3>
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class='bx bx-x' ></i></a>
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+                <form>
+                    <input type="text" name="Name" id="name" placeholder="Full name">
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                    <button type="submit" class="btn" onclick="sendMessage()">SEND MESSAGE</button>
+                </form>
+        </div>
+    </section>
+    <script>
+        function sendMessage(){
+            alert("your message has been sent successfully")
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SugarSlice. All rights reserved.</p>
+    </footer>
+</body>
+</html>
